@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    color: white;
+    text-shadow: 0 0 3px blue, 0 0 5px blue;
+}
+
+#myDIV {
+    width: 300px;
+    height: 200px;
+    background: red;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+</style>
+</head>
+<body>
+
+<h1>XUNBAO</h1>
+
+<div class="container">
+  <h2>Vertical (basic) form</h2>
+  <form action=" "  method="post">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+
+</body>
+</html>
